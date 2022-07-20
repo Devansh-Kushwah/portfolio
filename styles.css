@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&family=Raleway:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #343639;
+
+}
+
+#navbar{
+    background-color: #BE3144;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    box-shadow: 0px 1px 2px black;
+}
+
+#navbar>a{
+    padding: 20px 20px;
+    font-size: 1.3rem;
+}
+#navbar>a:hover{
+    background-color: #45567d;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+#welcome-section{
+    background-color: #343639;
+    width: 100%;
+    height:100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+#main-p{
+    font-size: 2rem;
+    font-style: italic;
+    color: #BE3144;
+    font-weight: 100;
+}
+
+#projects{
+    background-color: #45567D;
+    width: 100%;
+}
+
+.pro{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.pro>a{
+    width: 100%;
+    margin: 20px auto;
+    background-color: #343639;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px black ;
+
+}
+
+.pro>a:hover .code{
+    color: orange
+}
+
+.project-image{
+    width: 100%;
+    object-fit:cover;
+}s
+.code{
+    color: #343639;
+}
+.project-title{
+    font-size: 1.3rem;
+    padding: 10px 0;
+}
+
+
+h1,h2{
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-size: 2.5rem;
+    margin: 100px 0 10px 0;
+    padding: 80px  10px 0 10px;
+
+}
+
+i{
+    text-shadow: 3px 3px 3px black;
+    padding-right: 5px;
+    padding-top: 9px;
+    font-size: 1.2rem;
+}
+
+.social-links{
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 3px black;
+
+}
+
+.social-items{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact{
+    background-color: #343639;
+    width: 100%;
+    height:80vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info{
+    padding-bottom: 30px;
+}
+
+.info>p{
+    font-style: italic;
+    font-weight: 100;
+}
+.one{
+    height: 1px;
+    background-color: white;
+    width: 90%;
+    border: none;
+    max-width: 620px;
+    margin: 0 auto 30px auto;
+
+}
+
+.two{
+    height: 5px;
+    background-color: #BE3144;
+    border: none;
+    margin-bottom: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#cradential{
+    padding: 0 40px;
+}
+
+#user{
+    padding-right: 20px;
+}
+
+@media only screen and (min-width: 710px){
+    .pro{
+        margin: auto;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .pro>a{
+        width: 45%; 
+    }
+
+    .project-title{
+        padding: 5px 0;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    .pro{
+        margin: auto;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .pro>a{
+        width: 29%; 
+    }
+
+    .project-title{
+        padding: 3px 0;
+    }
+}
+
